@@ -1,7 +1,6 @@
 import 'error_handler.dart';
 
 // ============================================================================
-// PHẦN PHỤ TRÁCH: PHAN VĨNH SƠN
 // NỘI DUNG: OOP NÂNG CAO (NAMED & FACTORY CONSTRUCTOR), MIXINS VÀ SERVICE
 // ============================================================================
 

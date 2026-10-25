@@ -3,7 +3,6 @@ import 'error_handler.dart';
 import 'product_model.dart';
 
 // ============================================================================
-// PHẦN PHỤ TRÁCH: PHAN VĨNH SƠN & VŨ DUY DƯƠNG (PHỐI HỢP)
 // NỘI DUNG: GIAO DIỆN NGƯỜI DÙNG (UI) VÀ CÁC NÚT BẤM DEMO KỊCH BẢN THỰC TẾ
 // ============================================================================
 

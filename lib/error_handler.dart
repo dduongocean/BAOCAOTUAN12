@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 // ============================================================================
-// PHẦN PHỤ TRÁCH: VŨ DUY DƯƠNG
 // NỘI DUNG: XỬ LÝ LỖI, CUSTOM EXCEPTION, GENERICS VÀ HÀM BAO BỌC GOM LỖI (WRAPPER)
 // ============================================================================
 
