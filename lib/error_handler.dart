@@ -33,8 +33,10 @@ void safeRun(BuildContext context, VoidCallback action) {
   } on MyException catch (e) {
     // B. Mệnh đề ON - CATCH: Bắt đúng loại Custom Exception đã biết
     // Hiển thị thông báo cảnh báo màu cam thân thiện cho người dùng
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
+    ScaffoldMessenger.of(context)
+      ..hideCurrentSnackBar()
+      ..showSnackBar(
+        SnackBar(
         content: Text('⚠️ Lỗi nghiệp vụ: $e'),
         backgroundColor: Colors.orange.shade800,
         behavior: SnackBarBehavior.floating,
@@ -43,8 +45,10 @@ void safeRun(BuildContext context, VoidCallback action) {
   } catch (e) {
     // C. Mệnh đề CATCH TỔNG QUÁT: Bắt tất cả các lỗi hệ thống bất ngờ khác
     // Đây là chốt chặn giúp ứng dụng KHÔNG BAO GIỜ BỊ DỪNG ĐỘT NGỘT (CRASH)
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
+    ScaffoldMessenger.of(context)
+      ..hideCurrentSnackBar()
+      ..showSnackBar(
+        SnackBar(
         content: Text('❌ Lỗi hệ thống: $e'),
         backgroundColor: Colors.red.shade800,
         behavior: SnackBarBehavior.floating,

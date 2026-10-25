@@ -33,9 +33,9 @@ class Product {
     if (json['name'] == null || json['name'].toString().trim().isEmpty) {
       throw MyException('Tên sản phẩm không được để trống!');
     }
-    // Kiểm tra giá tiền không được âm
-    if (json['price'] == null || (json['price'] as num) < 0) {
-      throw MyException('Giá sản phẩm không được nhỏ hơn 0!');
+    // Kiểm tra giá tiền hợp lệ và không được âm
+    if (json['price'] is! num || (json['price'] as num) < 0) {
+      throw MyException('Giá sản phẩm không hợp lệ hoặc nhỏ hơn 0!');
     }
     return Product(json['name'].toString(), (json['price'] as num).toDouble());
   }
