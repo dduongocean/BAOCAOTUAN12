@@ -42,7 +42,7 @@ class Product {
 
 /// 3. SERVICE QUẢN LÝ DỮ LIỆU (SỬ DỤNG MIXIN VÀ DATASTORE)
 class ProductService with LoggerMixin {
-  // Kho lưu trữ dùng Generic DataStore<Product> của bạn Dương
+  // Kho lưu trữ dùng Generic DataStore<Product>
   final DataStore<Product> store = DataStore<Product>();
 
   // Thêm sản phẩm từ JSON bằng Factory Constructor
